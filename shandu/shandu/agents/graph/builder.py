@@ -2,7 +2,8 @@
 Graph builder for research graph.
 """
 from langgraph.graph import StateGraph
-from langgraph.graph.state import CompiledStateGraph
+# 高版本已经移除
+# from langgraph.graph import CompiledStateGraph
 
 from ..processors.content_processor import AgentState
 from ..utils.agent_utils import should_continue
@@ -18,7 +19,7 @@ def build_graph(
     enhance_report_node,
     expand_key_sections_node,
     report_node
-) -> CompiledStateGraph:
+) -> StateGraph:
     """
     Build the research workflow graph with all nodes.
     

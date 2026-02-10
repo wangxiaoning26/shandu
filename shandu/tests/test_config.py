@@ -6,7 +6,7 @@ import tempfile
 import unittest
 from unittest.mock import patch
 import json
-from shandu.config import Config
+from shandu.shandu.config import Config
 
 class TestConfig(unittest.TestCase):
     """Test cases for the Config class."""

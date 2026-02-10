@@ -1,7 +1,10 @@
 """Search implementation module."""
 from typing import List, Dict, Optional, Union, Any, Tuple
+# google和duckduckgo 搜索  需要vpn
 from langchain_community.tools import DuckDuckGoSearchResults, DuckDuckGoSearchRun
 from googlesearch import search as google_search
+#引入百度搜索
+from langchain_community.tools import BaiduSearchResults
 import asyncio
 import threading
 from concurrent.futures import ThreadPoolExecutor, TimeoutError
@@ -141,7 +144,7 @@ class UnifiedSearcher:
             max_results=max_results
         )
         self.ddg_run = DuckDuckGoSearchRun()
-        
+        self.search_tool = BaiduSearchResults(num_results=4, lang="en")  # lang="zh"为中文，"en"为英文
         # Initialize cache
         self.cache = SearchCache(ttl=cache_ttl)
         

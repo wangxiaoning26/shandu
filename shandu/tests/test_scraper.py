@@ -6,7 +6,7 @@ from unittest.mock import patch, MagicMock, AsyncMock
 import asyncio
 import json
 from datetime import datetime
-from shandu.scraper.scraper import WebScraper, ScrapedContent, ScraperCache
+from shandu.shandu.scraper.scraper import WebScraper, ScrapedContent, ScraperCache
 
 class TestScrapedContent(unittest.TestCase):
     """Test cases for the ScrapedContent class."""

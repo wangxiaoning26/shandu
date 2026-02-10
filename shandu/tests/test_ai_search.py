@@ -1,7 +1,7 @@
 import unittest
 from unittest.mock import MagicMock, patch
 from datetime import datetime
-from shandu.search.ai_search import AISearcher, AISearchResult
+from shandu.shandu.search.ai_search import AISearcher, AISearchResult
 
 
 class TestAISearchResult(unittest.TestCase):

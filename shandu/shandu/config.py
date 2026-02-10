@@ -8,9 +8,9 @@ import datetime
 DEFAULT_CONFIG = {
     # todo: api替换为自己选用的大模型
     "api": {
-        "base_url": "https://api.openai.com/v1",
-        "api_key": "",
-        "model": "gpt-4",
+        "base_url": "https://open.bigmodel.cn/api/paas/v4/",
+        "api_key": "26b82a1793064c46b2e90686ab48eb61.eSgvXwjUgrAaovEa",
+        "model": "glm-4-flash",
         "temperature": 0
     },
     "search": {

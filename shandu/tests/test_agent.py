@@ -1,7 +1,7 @@
 import unittest
 from unittest.mock import MagicMock, patch, AsyncMock
-from shandu.agents.agent import ResearchAgent
-from shandu.agents.langgraph_agent import ResearchGraph
+from shandu.shandu.agents.agent import ResearchAgent
+from shandu.shandu.agents.langgraph_agent import ResearchGraph
 
 
 class TestResearchAgent(unittest.TestCase):

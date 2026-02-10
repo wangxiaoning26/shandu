@@ -2,7 +2,7 @@ import unittest
 from unittest.mock import MagicMock, patch, AsyncMock
 from datetime import datetime
 import asyncio
-from shandu.research.researcher import ResearchResult, DeepResearcher
+from shandu.shandu.research.researcher import ResearchResult, DeepResearcher
 
 
 class TestResearchResult(unittest.TestCase):

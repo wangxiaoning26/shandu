@@ -4,7 +4,7 @@ from unittest.mock import patch, MagicMock, AsyncMock
 import asyncio
 import json
 from datetime import datetime
-from shandu.search.search import UnifiedSearcher, SearchResult, SearchCache
+from shandu.shandu.search.search import UnifiedSearcher, SearchResult, SearchCache
 
 class TestSearchResult(unittest.TestCase):
     """Test the SearchResult class."""
